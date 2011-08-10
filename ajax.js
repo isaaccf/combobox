@@ -3,6 +3,7 @@ $("#concepto").keyup(function(event){
 	//alert("Tecla pulsada: "+event.keyCode);
 	if (event.keyCode == 32 || (event.keyCode > 64 && event.keyCode < 91) || (event.keyCode > 95 && event.keyCode < 106)){
 		counter++;
+		
 		$.ajax({
 			type: "POST",
 			url: "datos.php",
